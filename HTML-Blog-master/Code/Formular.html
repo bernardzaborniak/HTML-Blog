@@ -1,0 +1,92 @@
+<!DOCTYPE HTML>
+<html lang="de">
+    <head>
+        <meta charset="utf-8"> <!-- "standalone"-Tag, wird nicht geschlossen -->
+        <title>Mensa Companion/Wissenswertes</title>
+        <!--Verlinkungen zu anderen Dateien -->
+        <!--Beschreibungen für auslesende Programme, meta tags -->
+    </head>
+    
+    <body >
+        <header>
+            <h1>Mensa Companion</h1>
+            <h2>Für alle die sich mit dem Tablett nicht entscheiden können</h2>
+        </header>
+        <!--nav nur einmal verwenden für die Navigation-->
+        <nav>
+            <ul>
+                <li><a href="Index.html">Startseite</a></li>
+                <li><a href="food.html">Das Essen</a></li>
+                <li><a href="about.html">Über die Tester</a></li>
+                <li><a href="links.html">Links und Referenzen</a></li>
+                <li><a href="Wissenswertes.html">Wissenswertes</a></li>
+                <li><a href="diagram.html">Geschmacksdiagramm</a></li>
+                
+            </ul>
+        </nav>
+       
+        <section>
+            <h4>Umfrage</h4>
+            <h5>wie findet ihr das Essen in der Mensa?</h5>
+            <form action=submit.php method=post>
+                
+                <fieldset>
+                    <legend>Über dich</legend>
+                    <label for="Name">Name</label>
+                    <input type="text" id="Name">
+                </fieldset>
+                
+                <fieldset>
+                    <legend>Besuch</legend>
+                    <label for="Zeit">Wann kommst du zu Mensa? 
+                        <select >
+                            <option>11:00</option>
+                            <option>11:30</option>
+                            <option>12:00</option>
+                            <option>12:30</option>
+                            <option>13:00</option>
+                            <option>13:30</option>
+                            <option>14:00</option>
+                            <option>14:30</option>   
+                        </select>        
+                    </label>
+                </fieldset>
+                
+                <section>
+                        <fieldset>
+                            <legend>Wie findest du die Location?</legend>
+                            <input type = "radio" name=loc value="1">geil
+                            <input type = "radio" name=loc value="2">geht so
+                            <input type = "radio" name=loc value="2">viel u eng, die ganzen Menschen regen mich auf und es stinkt
+                        </fieldset>
+                        <fieldset>
+                            <legend>Wie findest du das Hauptessen</legend>
+                            <input type = "radio" name=loc value="1">geil
+                            <input type = "radio" name=loc value="2">geht so
+                            <input type = "radio" name=loc value="3">nicht so geil
+                        </fieldset>
+                      <fieldset>
+                            <legend>Wie findest du die Beilagen (Desserts,Salate)?</legend>
+                           <input type = "radio" name=loc value="1">geil
+                            <input type = "radio" name=loc value="2">geht so
+                            <input type = "radio" name=loc value="3">nicht so geil
+                        </fieldset>  
+                </section>
+                <fieldset>
+                    <legend>Weitere Kommentare</legend>
+                    <label for="comm">Weitere Comments</label>
+                    <textarea rows=40 cols=40></textarea>
+                
+                </fieldset>
+                <fieldset>
+                    <input type="submit">
+                    <input type="reset">
+                </fieldset>
+                    
+            </form>
+        
+        </section>
+             
+
+    </body>
+</html>
