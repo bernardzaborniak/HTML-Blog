@@ -1,2 +1,2 @@
 # HTML-Blog
-dawd
+Simple HTML food blog.
