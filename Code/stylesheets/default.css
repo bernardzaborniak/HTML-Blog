@@ -1,0 +1,13 @@
+body
+{
+    margin: auto;
+    max-width: 1200px;
+    padding: 10px;
+    background-color: crimson;
+    border-radius: 10px;
+}
+
+html
+{
+    background-image: url("imgs/Auslastung.png");
+}
