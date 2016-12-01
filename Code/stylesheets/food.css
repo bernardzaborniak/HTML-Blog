@@ -1,0 +1,12 @@
+*, * ::after, * ::before{
+    box-sizing: border-box;
+    font-size:16px;
+    font-family: sans-serif;
+}
+
+
+nav>ul{
+    list-style-type:none;
+    margin: 0;
+    background-color: lightred;
+}
