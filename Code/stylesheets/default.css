@@ -70,8 +70,11 @@ nav ul{
     background-color:burlywood;
     overflow: hidden;
 
+
+
 }
 nav  li {
+    display:block;
     float: left;
     background-color: burlywood;
 

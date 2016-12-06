@@ -8,7 +8,6 @@ body,html{
 
 
 
-
 /*background-Bild*/
 .background{
     position: absolute;
@@ -48,15 +47,21 @@ header{
 
     left: 10%;
     right: 10%;
-    top:15%;
+    top:12%;
     z-index: 3;
+
+    flex-flow: column;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    flex: 1 0 auto;
 }
 
 
 /*die startbox für die navigation*/
 .navigation{
-    width: 50%;
-    height: 30%;
+    min-width: 50%;
+    min-height: 30%;
     margin:0 auto;
     opacity: 1;
     border-radius: 15px;
@@ -70,40 +75,21 @@ header{
     text-align:center;
 
     display: flex;
-}
 
-.navbox-bg{
-    position: absolute;
-    width: %;
-    height: 29%;
-    margin:0 auto;
-    top: 50%;
-    left:25%;
-    right:25%;
-    z-index: 1;
+    background-color: rgba(255,255,255,0.4);
 
-    background-color: floralwhite;
-    opacity: 0.4;
     border: 3px solid black;
     border-radius: 15px;
 
-    text-align:center;
-
+    overflow: hidden;
 }
-
-
 
 /*der hintergrund der Startbox*/
 
-p{
-    font-size: 80px;
-    font-family: sans-serif;
-    margin:auto;
-    display:none
-}
 
 nav{
-    width: 100%;;
+    flex: 1 0 auto;
+    width: 100%;
 }
 
 nav ul{
@@ -119,6 +105,7 @@ nav ul{
     flex-wrap: wrap;
     justify-content: center;
     align-items: center;
+    flex: 1 0 auto;
 
 
 }
@@ -156,101 +143,79 @@ nav li:hover{
 
 @media screen and (max-width: 1900px){
     header{
-    font-size: 1.8em;
-}
-    .navbox-bg{
-    height: 37%;
-}
-
-@media screen and (max-width: 1800px){
-    .navbox-bg{
-    height: 45%;
+        font-size: 2em;
+    }
+    nav a {
+        font-size: 3em;
     }
 
-@media screen and (max-width: 1500px){
-
+@media screen and (max-width: 1600px){
     header{
-    top:12%;
-    font-size: 1.5em;
- }
-       nav a {
-    font-size: 2em;
-}
-    .navbox-bg{
-    height: 25%;
-}
-    .navigation{
-    width: 50%;
-    height: 25%;
-
-}
-
-@media screen and (max-width: 1350px){
-     nav a {
-    font-size: 1.7em;
+        font-size: 1.6em;
     }
-     header{
-    top:12%;
-    font-size: 1.3em;
- }
-}
-
-@media screen and (max-width: 1200px){
-     .navbox-bg{
-    width: 80%;
-    height: 25%;
-    left:10%;
-}
-    .navigation{
-    width: 80%;
-    height: 25%;
-    left:10%;
+    nav a {
+        font-size: 2.5em;
     }
-      header{
-    top:12%;
-    font-size: 1.1em;
- }
-}
+
+@media screen and (max-width: 1300px){
+    header{
+        font-size: 1.4em;
+        top:8%;
+    }
+    nav a {
+        font-size: 2.0em;
+    }
+
+@media screen and (max-width: 1100px){
+    header{
+        font-size: 1.2em;
+        top:3%;
+    }
+    nav a {
+        font-size: 1.5em;
+    }
 
 @media screen and (max-width: 800px){
-    .navbox-bg{
-    width: 80%;
-    height: 38%;
-    left:10%;
+    header{
+        font-size: 1em;
+        top:3%;
     }
-      header{
-    top:6%;
-    font-size: 1.1em;
- }
-}
+    nav a {
+        font-size: 1.2em;
+
+    }
+    .navigation{
+        left:15%;
+        right:15%;
+    }
 
 @media screen and (max-width: 500px){
     header{
-    top:2%;
-    left: 0;
-    right: 0;
+        font-size: 1em;
+        top:3%;
     }
-
     h2{
         display: none;
     }
+
+
+    .navigation{
+        top:35%;
+        left:5%;
+        right:5%;
+    }
     nav ul{
         flex-flow: column;
-        align-content: stretch;
+        ;
     }
-    nav li{
-        width: 100%;
-    }
+
     nav a {
-    font-size: 1.4em;
+        width:350px;
+        font-size: 1.2em;
     }
-    .navbox-bg{
-    width: 80%;
-    height: 70%;
-    left:10%;
-    top: 27%
+    .diagramm{
+        font-size: 1em;
     }
-}
 
 
 
