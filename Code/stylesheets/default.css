@@ -1,13 +1,116 @@
-body
-{
-    margin: auto;
-    max-width: 1200px;
-    padding: 10px;
-    background-color: crimson;
-    border-radius: 10px;
+* , * ::after, * ::before{
+    box-sizing: border-box;
 }
 
+html, body{
+    font-size: 16px;
+    font-family: sans-serif;
+}
+
+/*background- hier muss noch der von alex geforderte blur rein, als sisterelement*/
 html
 {
-    background-image: url("imgs/Auslastung.png");
+    background-image: url("imgs/greek.jpg");
+}
+
+
+
+/*div wrapper fasst alles zusammen und bestimmt mit margin wo man den Hintergund sieht, außerdem legt es blurriness fest*/
+div.wrapper
+{
+    position: relative;
+    margin: auto;
+    max-width: 1000px;
+    padding: 10px;
+    background-color: azure;
+    background-color: rgba(255,255,255,0.9);
+    border-radius: 10px;
+    z-index: 1;
+}
+
+/*der Verschwommene Effekt um den wrapper herum*/
+div.blur{
+    z-index: -5;
+    position: absolute;
+    top:0;
+    left:0;
+    height: 200%;
+    margin-top:-10%;
+    width: 110%;
+    margin-left:-5%;
+
+    border-radius: 10px;
+
+    background-color: white;
+    opacity: 0.6;
+    filter: blur(50px);
+}
+
+
+
+
+
+/*navigation*/
+nav{
+    position:fixed;
+    width: 100%;
+    top: 0;
+    padding:0;
+    margin: 0;
+    left: 0;
+    z-index:4;
+}
+
+nav ul{
+
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    width: 100%;
+    background-color:burlywood;
+    overflow: hidden;
+
+}
+nav  li {
+    float: left;
+    background-color: burlywood;
+
+}
+
+nav li:hover{
+    background-color: bisque;
+
+}
+nav a {
+    display: block;
+    text-align: center;
+    font-size: 1.5em;
+    padding: 10px 15px;
+    text-decoration: none;
+    color: black;
+    font-family: 'Indie Flower', cursive;
+    text-shadow: 1px 1px 0 rgba(0,0,0,.2);
+}
+
+/*header*/
+header.logo{
+    position: relative;
+    padding-top: 30px;
+    opacity: 1;
+    z-index:3;
+    text-align: center;
+}
+
+header.logo>*{
+    z-index:3;
+    padding-top: 30px;
+    opacity: 1;
+
+    text-align: center;
+
+}
+
+
+img{
+    width:100%;
 }
