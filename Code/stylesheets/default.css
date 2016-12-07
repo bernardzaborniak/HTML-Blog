@@ -20,7 +20,7 @@
 body {
     font-size: 16px;
     font-family: sans-serif;
-    background-image: url("imgs/greek.jpg");
+    background-image: url("imgs/symphony-green.png");
     /*background-color: gainsboro;*/
 }
 
@@ -151,4 +151,44 @@ nav a {
     background-color: white;
     padding: 15px;
     margin: 5px;
+}
+
+/*media query für die Nav*/
+@media screen and (max-width: 780px){
+    .contentFlow {
+       margin-top: 10%;
+
+}
+
+@media screen and (max-width: 600px){
+    .contentFlow {
+        margin-top: 18%;
+    }
+}
+
+
+@media screen and (max-width: 440px){
+    .contentFlow {
+        margin-top: 58%;
+    }
+        nav li {
+    display: block;
+    float: none;
+    font-size: 0.8em;
+}
+
+    @media screen and (max-width: 330px){
+    .contentFlow {
+        margin-top: 58%;
+    }
+        nav{
+            position:fixed;
+            margin-top:0px;
+        }
+        nav li {
+    display: block;
+    float: none;
+    font-size: 0.6em;
+}
+
 }
