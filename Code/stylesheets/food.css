@@ -1,12 +1,8 @@
-*, * ::after, * ::before{
-    box-sizing: border-box;
-    font-size:16px;
-    font-family: sans-serif;
+#entries > ul, #entries > ul ul
+{
+    list-style-type: none;
 }
 
-
-nav>ul{
-    list-style-type:none;
-    margin: 0;
-    background-color: lightred;
+hr {
+    display: none;
 }

@@ -1,8 +1,7 @@
 body,html{
     min-height: 100%;
     margin: 0;
-    min-width:100%;
-
+    min-width: 100%;
     font-size: 20px;
 }
 
@@ -13,14 +12,13 @@ body,html{
     position: absolute;
     height: 100%;
     width: 100%;
-    margin:0 auto;
+    margin: 0 auto;
 
     background-image: url("imgs/Intro.jpg");
     background-repeat: no-repeat;
     background-size: cover;
     filter:blur(5px);
     z-index: 0;
-
 
     animation-name: animatedBackground;
     animation-duration: 50s;
@@ -34,7 +32,7 @@ body,html{
     100% {background-position: 0 0; }
 }
 
-header{
+header {
     text-align: center;
     font-family: 'Playball', cursive;
     font-size: 2.3em;
@@ -59,7 +57,7 @@ header{
 
 
 /*die startbox für die navigation*/
-.navigation{
+.navigation {
     min-width: 50%;
     min-height: 30%;
     margin:0 auto;
@@ -106,11 +104,9 @@ nav ul{
     justify-content: center;
     align-items: center;
     flex: 1 0 auto;
-
-
 }
 
-nav li{
+nav li {
 
     /* alternative tabletts
     background-image: url(imgs/Tablett.png);
@@ -216,9 +212,3 @@ nav li:hover{
     .diagramm{
         font-size: 1em;
     }
-
-
-
-
-
-

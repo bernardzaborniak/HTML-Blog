@@ -1,39 +1,64 @@
+/*
+    theme file; required format:
+    [nav]
+    [.contentflow]
+        [header]
+        [article/dic/aside/section]
+
+    version: 16-12-07
+*/
+
 * , * ::after, * ::before{
     box-sizing: border-box;
 }
 
-html, body{
-    font-size: 16px;
-    font-family: sans-serif;
+* {
+    word-wrap: break-word; /*fixes horizontal scrollbar caused by long strings*/
 }
 
 /*background- hier muss noch der von alex geforderte blur rein, als sisterelement*/
-html
-{
+body {
+    font-size: 16px;
+    font-family: sans-serif;
     background-image: url("imgs/greek.jpg");
+    /*background-color: gainsboro;*/
 }
 
 
+img {
+    width:100%;
+}
+
+h1, h2, h3, h4{
+    font-family: 'Indie Flower'
+}
+
+a
+{
+    text-decoration: none;
+}
+
 
 /*div wrapper fasst alles zusammen und bestimmt mit margin wo man den Hintergund sieht, außerdem legt es blurriness fest*/
-div.wrapper
-{
+.contentFlow {
     position: relative;
     margin: auto;
     max-width: 1000px;
     padding: 10px;
-    background-color: azure;
-    background-color: rgba(255,255,255,0.9);
-    border-radius: 10px;
-    z-index: 1;
+    background-color: rgba(255, 255, 255, .4);
+    /*border-radius: 10px;
+    z-index: 1;*/
 }
 
 /*der Verschwommene Effekt um den wrapper herum*/
-div.blur{
+
+/* disabled for now; needs to be fixed
+
+.contentFlow.blur{
     z-index: -5;
     position: absolute;
-    top:0;
-    left:0;
+    top: 0;
+    left: 0;
     height: 200%;
     margin-top:-10%;
     width: 110%;
@@ -45,75 +70,70 @@ div.blur{
     opacity: 0.6;
     filter: blur(50px);
 }
+*/
 
+/*header*/
+.contentFlow > header {
+    position: relative;
+    padding-top: 30px;
+    opacity: 1;
+    z-index: 3;
+    text-align: center;
+}
 
-
+.contentFlow > header > * {
+    z-index: 3;
+    padding-top: 30px;
+    opacity: 1;
+    text-align: center;
+}
 
 
 /*navigation*/
-nav{
-    position:fixed;
-    width: 100%;
+nav {
+    position: fixed;
+    max-width: inherit;
     top: 0;
-    padding:0;
-    margin: 0;
+    padding: 0;
+    /*Center element*/
+    margin-left: auto;
+    margin-right: auto;
     left: 0;
+    right: 0;
     z-index:4;
 }
 
-nav ul{
-
+nav ul {
     list-style-type: none;
     padding: 0;
     margin: 0;
     width: 100%;
-    background-color:burlywood;
-    overflow: hidden;
-
-
-
-}
-nav  li {
-    display:block;
-    float: left;
     background-color: burlywood;
+    overflow: hidden;
+}
 
+nav li {
+    display: block;
+    float: left;
 }
 
 nav li:hover{
     background-color: bisque;
-
 }
+
 nav a {
     display: block;
     text-align: center;
     font-size: 1.5em;
     padding: 10px 15px;
-    text-decoration: none;
     color: black;
     font-family: 'Indie Flower', cursive;
-    text-shadow: 1px 1px 0 rgba(0,0,0,.2);
+    text-shadow: 1px 1px 0 rgba(0, 0, 0, .3);
 }
 
-/*header*/
-header.logo{
-    position: relative;
-    padding-top: 30px;
-    opacity: 1;
-    z-index:3;
-    text-align: center;
-}
-
-header.logo>*{
-    z-index:3;
-    padding-top: 30px;
-    opacity: 1;
-
-    text-align: center;
-
-}
-
-
-img{
-    width:100%;
+.contentFlow > article, .contentFlow > div:not(.blur), .contentFlow > aside, .contentFlow > section
+{
+    background-color: white;
+    padding: 15px;
+    margin: 5px;
 }
