@@ -33,6 +33,14 @@ h1, h2, h3, h4{
     font-family: 'Indie Flower'
 }
 
+h3{
+    font-size: 1.5em;
+}
+
+h4{
+    font-size: 1.2em;
+}
+
 a
 {
     text-decoration: none;
@@ -43,7 +51,7 @@ a
 .contentFlow {
     position: relative;
     margin: auto;
-    max-width: 1000px;
+    max-width: 1300px;
     padding: 10px;
     background-color: rgba(255, 255, 255, .4);
     /*border-radius: 10px;
@@ -88,7 +96,7 @@ a
     text-align: center;
 }
 */
-header.logo{
+.contentFlow > header{
     padding:0;
     margin:0;
     margin-top:4.5%;
@@ -123,7 +131,7 @@ nav ul {
     padding: 0;
     margin: 0;
     width: 100%;
-    background-color: burlywood;
+    background-color: rgba(233,190,73,0.9);
     overflow: hidden;
 }
 
@@ -146,7 +154,13 @@ nav a {
     text-shadow: 1px 1px 0 rgba(0, 0, 0, .3);
 }
 
-.contentFlow > article, .contentFlow > div:not(.blur), .contentFlow > aside, .contentFlow > section
+.ignore
+{
+    padding: 0px;
+    margin: 0px;
+}
+
+.contentFlow article:not(.ignore), .contentFlow section:not(.ignore), .contentFlow aside:not(.ignore), .contentFlow > div:not(.ignore)
 {
     background-color: white;
     padding: 15px;

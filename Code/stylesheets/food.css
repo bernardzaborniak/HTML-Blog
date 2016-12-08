@@ -1,8 +1,29 @@
-#entries > ul, #entries > ul ul
+#entries > ul
 {
     list-style-type: none;
+    padding: 0px;
 }
 
 hr {
     display: none;
 }
+
+
+#articles
+{
+    max-width: 77%;
+    float: left;
+}
+
+#sidepanels
+{
+    max-width: 23%;
+    float: right;
+}
+
+.contentFlow > footer
+{
+    clear: both;
+}
+
+
