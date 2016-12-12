@@ -20,7 +20,10 @@
 body {
     font-size: 16px;
     font-family: sans-serif;
-    background-image: url("imgs/symphony-green.png");
+    background-image: url("imgs/wood-plant.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment:fixed;
     /*background-color: gainsboro;*/
 }
 
@@ -167,12 +170,11 @@ nav a {
     margin: 5px;
 }
 
-/*media query für die Nav*/
+/*media query für die Nav und sidebar*/
 @media screen and (max-width: 780px){
     .contentFlow {
        margin-top: 10%;
-
-}
+    }
 
 @media screen and (max-width: 600px){
     .contentFlow {
@@ -183,26 +185,55 @@ nav a {
 
 @media screen and (max-width: 440px){
     .contentFlow {
-        margin-top: 58%;
-    }
-        nav li {
-    display: block;
-    float: none;
-    font-size: 0.8em;
-}
-
-    @media screen and (max-width: 330px){
-    .contentFlow {
-        margin-top: 58%;
-    }
-        nav{
-            position:fixed;
-            margin-top:0px;
+        margin-top: 0%;
         }
-        nav li {
-    display: block;
-    float: none;
-    font-size: 0.6em;
-}
+    nav li {
+        display: block;
+        float: none;
+        font-size: 0.8em;
+        }
+    nav{
+        position: absolute;
+        top: 0px;
+    }
+    img.logo{
+        margin-top: 55%;
+    }
+    .contentFlow{
+        margin: 0px;
+        padding:0px;
 
+    }
+    body{
+       margin: 0px;
+       padding:0px;
+       margin-top: -20px;
+    }
+
+
+@media screen and (max-width: 330px){
+    .contentFlow {
+         margin-top: 0%;
+    }
+    nav{
+        position: absolute;
+    }
+    img.logo{
+        margin-top: 60%;
+    }
+
+    nav li {
+        display: block;
+        float: none;
+        font-size: 0.6em;
+    }
+    .contentFlow{
+        margin: 0px;
+        padding:0px;
+        margin-top: -20px;
+    }
+    body{
+       margin: 0px;
+       padding:0px;
+    }
 }
