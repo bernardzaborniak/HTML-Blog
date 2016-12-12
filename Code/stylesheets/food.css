@@ -26,4 +26,40 @@ hr {
     clear: both;
 }
 
+#entriesTop{
+    display: none;
+}
+
+
+/* mediaqueries: die aside-"Werbung" ist ganz Unten, die einträge über den Artikeln */
+@media screen and (max-width: 1000px){
+   #sidepanels
+    {
+        margin-top: 70px;
+        max-width: 100%;
+        float: none;
+    }
+    #articles
+    {
+        max-width: 100%;
+        float: none;
+    }
+
+    /*EntriesTop werden sichtbar- die vorherigen bekommen display: none*/
+    #entries{
+        display:none;
+    }
+    #entriesTop{
+        display: inline-block;
+        width:100%;
+        margin-right: 0px;
+        margin-left: 0px;
+
+    }
+
+
+
+
+
+}
 
