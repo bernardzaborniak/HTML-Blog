@@ -16,7 +16,9 @@ section{
 @media screen and (max-width: 440px){
     img.tester{
         float: none;
-        width: 100%;
+        min-width:100%;
+
     }
+
 }
 

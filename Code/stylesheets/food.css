@@ -30,6 +30,7 @@ hr {
     display: none;
 }
 
+
 #bewertungstabelle_pos{
     display: inline-block;
     width: 49%;
@@ -68,10 +69,19 @@ hr {
         margin-left: 0px;
 
     }
-
-
-
-
-
 }
+@media screen and (max-width: 440px){
 
+    #bewertungstabelle_pos{
+    display: block;
+    width: 100%;
+    color: green;
+    }
+
+    #bewertungstabelle_neg{
+    display: block;
+    width: 100%;
+    float: right;
+    color: darkred;
+    }
+}
