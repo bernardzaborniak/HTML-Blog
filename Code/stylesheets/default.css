@@ -37,11 +37,11 @@ h1, h2, h3, h4{
 }
 
 h3{
-    font-size: 1.5em;
+    font-size: 1.7em;
 }
 
 h4{
-    font-size: 1.2em;
+    font-size: 1.4em;
 }
 
 a
@@ -163,12 +163,23 @@ nav a {
     margin: 0px;
 }
 
-.contentFlow article:not(.ignore), .contentFlow section:not(.ignore), .contentFlow aside:not(.ignore), .contentFlow > div:not(.ignore)
+.contentFlow article:not(.ignore),
+.contentFlow section:not(.ignore),
+.contentFlow aside:not(.ignore),
+.contentFlow > div:not(.ignore)
 {
     background-color: white;
     padding: 15px;
     margin: 5px;
 }
+.blur{
+    display:none;
+
+}
+
+
+
+
 
 /*media query für die Nav und sidebar*/
 @media screen and (max-width: 780px){

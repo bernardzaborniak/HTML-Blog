@@ -30,6 +30,18 @@ hr {
     display: none;
 }
 
+#bewertungstabelle_pos{
+    display: inline-block;
+    width: 49%;
+    color: green;
+}
+
+#bewertungstabelle_neg{
+    display: inline-block;
+    width: 49%;
+    float: right;
+    color: darkred;
+}
 
 /* mediaqueries: die aside-"Werbung" ist ganz Unten, die einträge über den Artikeln */
 @media screen and (max-width: 1000px){
