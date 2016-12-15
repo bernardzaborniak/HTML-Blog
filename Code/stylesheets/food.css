@@ -85,3 +85,39 @@ hr {
     color: darkred;
     }
 }
+
+@media screen and (max-width: 350px){
+
+    body{
+        font-size: 0.8em;
+    }
+
+    h3{
+        font-size: 1.5em;
+    }
+
+    #entriesTop>ul{
+        list-style: none;
+        padding-left: 0px;
+    }
+
+
+}
+
+@media print {
+    .contentFlow{
+        min-width: 100%;
+        margin: 0 auto;
+    }
+
+    #sidepanels{
+        display:none;
+    }
+
+    #articles
+    {
+        min-width: 100%;
+        float: none;
+        margin: 0 auto
+    }
+}

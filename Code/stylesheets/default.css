@@ -178,10 +178,22 @@ nav a {
 }
 
 
+/*media query für extra Große Monitore*/
+@media screen and (min-width: 2520px){
+    .contentFlow {
+        margin: auto;
+        max-width: 1900px;
+        padding: 10px;
+        background-color: rgba(255, 255, 255, .4);
+    }
+     img.logo{
 
-
+         margin-top: -2%;
+    }
+}
 
 /*media query für die Nav und sidebar*/
+
 @media screen and (max-width: 780px){
     .contentFlow {
        margin-top: 10%;
@@ -232,7 +244,7 @@ nav a {
     h4{
     font-size: 1.4em;
     }
-
+}
 
 
 @media screen and (max-width: 330px){
@@ -260,4 +272,29 @@ nav a {
        margin: 0px;
        padding:0px;
     }
+}
+
+@media screen and (max-width: 250px){
+    img.logo{
+        margin-top: 73%;
+    }
+}
+
+@media print {
+    nav{
+        display: none;
+    }
+
+    .contentFlow{
+        width: 100%;
+        margin: 0;
+    }
+
+    body{
+        font-size: 12px;
+    }
+    a:link:after, a:visited:after {
+        content: " [" attr(href) "] ";
+    }
+
 }

@@ -156,6 +156,8 @@ nav li:hover{
         font-size: 2.5em;
     }
 
+
+
 @media screen and (max-width: 1300px){
     header{
         font-size: 1.4em;
@@ -164,6 +166,7 @@ nav li:hover{
     nav a {
         font-size: 2.0em;
     }
+}
 
 @media screen and (max-width: 1100px){
     header{
@@ -173,6 +176,7 @@ nav li:hover{
     nav a {
         font-size: 1.5em;
     }
+}
 
 @media screen and (max-width: 800px){
     header{
@@ -187,10 +191,41 @@ nav li:hover{
         left:15%;
         right:15%;
     }
+}
 
 @media screen and (max-width: 500px){
     header{
         font-size: 1em;
+        top:3%;
+    }
+    h2{
+        display: none;
+    }
+
+
+    .navigation{
+
+        top:35%;
+        left:5%;
+        right:5%;
+    }
+    nav ul{
+        flex-flow: column;
+    }
+
+    nav a {
+        width:350px;
+        font-size: 1.2em;
+    }
+    .diagramm{
+        font-size: 1em;
+    }
+}
+
+@media screen and (max-width: 350px){
+
+     header{
+        font-size: 0.8em;
         top:3%;
     }
     h2{
@@ -209,10 +244,39 @@ nav li:hover{
 
     nav a {
         width:350px;
-        font-size: 1.2em;
+        font-size: 0.8em;
     }
     .diagramm{
-        font-size: 1em;
+        font-size: 0.8em;
+    }
+}
+
+@media screen and (max-width: 300px){
+
+     header{
+        font-size: 0.7em;
+        top:3%;
+    }
+    h2{
+        display: none;
+    }
+
+
+    .navigation{
+        top:25%;
+        left:5%;
+        right:5%;
+    }
+    nav ul{
+        flex-flow: column;
+    }
+
+    nav a {
+        width:350px;
+        font-size: 0.8em;
+    }
+    .diagramm{
+        font-size: 0.8em;
     }
 }
 
