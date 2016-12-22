@@ -9,6 +9,7 @@
         <link  href ="stylesheets/default.css" rel="stylesheet"type="text/css">
         <link  href ="stylesheets/form.css" rel="stylesheet"type="text/css">
         <link href="https://fonts.googleapis.com/css?family=Indie+Flower" rel="stylesheet">
+        <script src="js/umfrage.js" type="text/javascript"></script>
     </head>
 
     <body >
@@ -31,7 +32,7 @@
             <h4>Umfrage</h4>
             <h5>wie findet ihr das Essen in der Mensa?</h5>
             <p> Wir arbeiten daran, eure Bewertungen in einem Diagramm grafisch darzustellen</p>
-            <form action=submit.php method=post>
+            <form action=submit.php method=post name=Formular>
 
                 <fieldset>
                     <legend>Über dich</legend>
@@ -82,8 +83,8 @@
 
                 </fieldset>
                 <fieldset>
-                    <input type="submit">
-                    <input type="reset">
+                    <input type="submit" id="submit">
+                    <input type="reset" id="reset">
                 </fieldset>
 
             </form>
