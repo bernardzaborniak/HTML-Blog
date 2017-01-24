@@ -1,0 +1,9 @@
+alle Karten in einen Array speichern,
+parallel einen Boolean Array, der die booleans speichert, jede Karte hat einen eigenen index.
+array max number of visible cards.
+
+
+alle Objekte in einen Array speichern. 
+random allen elementen ein Bild hinzufügen, von jedem Bild 2. 
+Array of max visible cards.
+src vergleichen beim flippen
