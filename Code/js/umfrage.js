@@ -46,7 +46,15 @@ function validateAll()
         }
     }
 
-    alert(validated ? "ur good 2 go brah" : "sumtings wrong m8 :(")
+    if(validated == true){
+        alert("ur good 2 go brah");
+        fenster = window.open("memory game/memory.html", "fenster1", "width=2000px ,height=1000px ,status=yes,scrollbars=yes,resizable=yes");
+   fenster.focus();
+    }else{
+        alert("sumtings wrong m8 :(");
+    }
+
+    //alert(validated ? "ur good 2 go brah" : "sumtings wrong m8 :(")
 
     return false;
 }
