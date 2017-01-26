@@ -1,62 +1,58 @@
-h4{
+h4 {
     font-size: 2em;
 }
-h5{
+h5 {
     font-size: 1.2em;
 }
-
-textarea{
+.hidden {
+    display: none;
+}
+.error {
+    color: red;
+}
+textarea {
     width: 100%;
     resize: none;
 }
-fieldset{
+fieldset {
     max-width: 100%;
-    margin-top:15px;
-    margin-bottom:15px;
+    margin-top: 15px;
+    margin-bottom: 15px;
     /*background-color: hsl(40, 80%, 85%);*/
     border-radius: 5px;
     border: 3px solid hsl(40, 70%, 55%)
 }
-
-fieldset.radioset{
+fieldset.radioset {
     min-width: 100%;
-
 }
-input[type=text],textarea{
+input[type=text],
+textarea {
     border: 1px solid green;
     border-radius: 4px;
     background-color: white;
-
 }
-input[type=text]:focus,textarea:focus{
-   box-shadow: 0px 0px 10px 0px lightblue;
+input[type=text]:focus,
+textarea:focus {
+    box-shadow: 0px 0px 10px 0px lightblue;
 }
-
-input[type=radio]{
-
+input[type=radio] {
     margin-left: 0%;
-
 }
-
-.radio:after{
-     content: "  ";
-  display: block;
+.radio:after {
+    content: "  ";
+    display: block;
 }
-
-legend{
+legend {
     font-family: 'Indie Flower';
     font-size: 1.5em;
 }
-
-input[type=button], input[type=submit], input[type=reset] {
+input[type=button],
+input[type=submit],
+input[type=reset] {
     background-color: #4CAF50;
     border: none;
     padding: 9px 18px;
     cursor: pointer;
     border-radius: 2px;
 }
-
-@media screen and (max-width: 440px){
-
-}
-
+@media screen and (max-width: 440px) {}

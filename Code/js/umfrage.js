@@ -1,37 +1,99 @@
+"use strict";
+
+var form = null;
+
+var txtName = "Name";
+var radioGroups = ["Loc", "Ess", "Bei"];
+
+function getErrFld(input)
+{
+    return document.getElementById("out" + input);
+}
+
+function validateAll()
+{
+    var toValidate = radioGroups.slice();
+    toValidate.splice(0, 0, txtName);
+    var validated = true;
+
+    for(var i = 0; i < toValidate.length; i++){
+        var selected = form[toValidate[i]];
+        var err = getErrFld(toValidate[i])
+
+        if(selected.type == "text")
+        {
+            if(selected.value == ""){
+                validated = false;
+                err.innerHTML = "Bitte Namen eingeben";
+                err.className = "error";
+                selected.focus();
+            }
+        }
+        else
+        {
+            var isChecked = false;
+            for (var j = 0; j < selected.length; j++)
+            {
+                isChecked = selected[j].checked || isChecked;
+            }
+
+            if(!isChecked){
+                validated = false;
+                err.innerHTML = "Bitte Option auswählen.";
+                err.className = "error";
+            }
+
+        }
+    }
+
+    alert(validated ? "ur good 2 go brah" : "sumtings wrong m8 :(")
+
+    return false;
+}
+
+
+function textBoxChange()
+{
+    getErrFld("Name").className = "hidden";
+}
+
+function focusLost()
+{
+    var txt = form["Name"];
+    var err = getErrFld("Name");
+    if(txt.value == ""){
+        err.innerHTML = "Bitte Namen eingeben";
+        err.className = "error";
+    }
+}
+
+function selected(event)
+{
+    var target = (event.target || event.srcElement)["name"];
+    getErrFld(target).className = "hidden";
+}
+
+
 window.onload = function(){
+    //var submitBtn = document.getElementById("submit");
+    //submitBtn.addEventListener("submit", validate);
 
-    "use strict";
+    form = document.forms["umfrage"];
 
-    //der submit Button, löst die Funktion eim Klicken auf
-
-    //gibt an ob die Eingaben un korrekt sind - für spätere benutzung
-    var correctInput = false;
-
-    var submit = document.getElementById("reset");
-    submit.addEventListener("click", checkFormular);
+    form["Name"].addEventListener("keypress", textBoxChange);
+    form["Name"].addEventListener("blur", focusLost);
 
 
-    function checkFormular(){
-        //falls ich emails checken wolte
-        //if (document.Formular.Mail.value.indexOf("@") == -1)
+    for(var i = 0; i < radioGroups.length; i++){
+        var btns = form[radioGroups[i]];
 
-        if(document.Formular.Name.value == ""){
-            alert("Bitte den Namen angeben")
-            document.Formular.Name.focus();
-            correctInput = false;
-        }else{
-            correctInput = true;
+        for(var j = 0; j < btns.length; j++){
+            btns[j].addEventListener("change", selected);
+
+            //btns[j].addEventListener("change", function(){
+            //    selected(cur.valueOf()); //why the f does this copy the reference?!
+            //});
         }
-
-        if(document.Formular.loc.checked == "false"){
-            alert("Bitte wähle eine Option aus")
-            document.Formular.loc.focus();
-            correctInput = false;
-        }else{
-            correctInput = true;
-        }
-
-
     }
 
 }
