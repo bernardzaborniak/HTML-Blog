@@ -1,5 +1,7 @@
-"use strict";
+
 window.onload = function(){
+    
+    "use strict";
     
 //der kasten der alle Karten enthält
 var container = document.getElementsByClassName("flip-container")[0];
@@ -45,7 +47,7 @@ var allImgs = [
     
 //buttons
 var  startButton = document.getElementById("startButton");
-var  resetButton = document.getElementById("resetButton");
+
     
  
 startButton.onclick = startGame;
@@ -78,6 +80,10 @@ startButton.onclick = startGame;
             for(let i=0;i<allCardsNumber;i++){
                 allCards[i].style.transform = "rotateY(0deg)"; 
                 allCards[i].style.boxShadow = "";
+                turnedCardsNumber = 0;   
+                turnable = true;  
+                turnedCards=[]; 
+                allRightTurnedCards = [];
             }
         }
         
